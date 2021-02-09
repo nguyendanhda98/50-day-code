@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.body {
+  display: flex;
+}
+
+.container {
+  display: flex;
+}
+
+.panel {
+  border-radius: 100px;
+
+  height: 80vh;
+  width: 3vw;
+  flex: 0.1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.7s ease-in;
+}
+
+.panel h3 {
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  opacity: 0;
+  color: #fff;
+}
+
+.panel.active {
+  flex: 1;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: 0.7s ease-in;
+}
